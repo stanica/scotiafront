@@ -1,1 +1,3 @@
 # scotiafront
+
+npm install
