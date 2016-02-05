@@ -103,7 +103,6 @@ var cssTasks = function(filename) {
         precision: 10,
         includePaths: [
             '.'
-            //'./bower_components/bootstrap-sass/assets/stylesheets/'
         ],
         errLogToConsole: !enabled.failStyleTask
       }));
