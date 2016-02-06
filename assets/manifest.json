@@ -2,7 +2,10 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/app.js"
+        "scripts/app.js",
+        "scripts/services/*.js",
+        "scripts/directives/*.js",
+        "scripts/controllers/*.js"
       ],
       "main": true
     },
