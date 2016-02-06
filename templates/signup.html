@@ -1,6 +1,76 @@
 <graybar title="'Lemonaid\'s Estimate'"></graybar>
 
-<div id="signup-container">
+<div class="container-fluid sign-up-page">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="row">
+				<div class="col-sm-12 tac header">
+					<h2>Review your information and make adjustments</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 jug-cont tac">
+					<h3>Interest Rate</h3>
+
+					<div class="jug yellow">
+						<span class="num">{{interest}}%</span>
+					</div>
+				</div>
+
+				<div class="col-sm-6 jug-cont tac">
+					<h3>You could be saving</h3>
+
+					<div class="jug green">
+						<span class="num">${{savings}}</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 tac">
+					<h2>Add more info to see your changes</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12">
+					<form name="signupForm" class="bottom-bordered bordered" ng-submit="" novalidate>
+					    <fieldset>
+					    	<input placeholder="Full Name" type="text" ng-model="info.fullName" required>
+					    </fieldset>
+
+					    <fieldset>
+					    	<input placeholder="Date of Birth" type="text" ng-model="info.dob" required>
+					    </fieldset>
+
+						<fieldset>
+					    	<input placeholder="Marital Status" type="text" ng-model="info.maritalStatus" required>
+					    </fieldset>
+
+					    <fieldset>
+					    	<input placeholder="Postal Code" type="text" ng-model="info.postalCode" required>
+					    </fieldset>
+
+					    <fieldset>
+					    	<input placeholder="Email Address" type="text" ng-model="info.email" required>
+					    </fieldset>
+
+					    <fieldset>
+					    	<input placeholder="Residential Status" type="text" ng-model="info.residentialStatus" required>
+					    </fieldset>
+					</form>
+
+					<div class="tac">
+						<a href="" class="round-btn">Next Step</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div id="signup-container">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
@@ -31,4 +101,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->

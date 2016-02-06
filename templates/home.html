@@ -6,21 +6,21 @@
 					<img src="/dist/images/Lemon.png" alt="Lemonaid Logo" class="img-responsive">
 				</div>
 
-				<form name="homeForm" ng-submit="" novalidate>
+				<form name="homeForm" ng-submit="" class="bottom-bordered" novalidate>
 				    <fieldset>
 				    	<input name="amount" placeholder="How much do you need?" type="text" ng-model="info.amount" autofocus required>
 				    </fieldset>
 
 				    <fieldset>
-				    	<input name="employed" placeholder="Are you currently employed?" type="text" ng-model="credentials.employed" required>
+				    	<input name="employed" placeholder="Are you currently employed?" type="text" ng-model="info.employed" required>
 				    </fieldset>
 
 					<fieldset>
-				    	<input name="rate" placeholder="What is your interest rate?" type="text" ng-model="credentials.rate" required>
+				    	<input name="rate" placeholder="What is your interest rate?" type="text" ng-model="info.rate" required>
 				    </fieldset>
 
 				    <fieldset>
-				    	<input name="score" placeholder="Estimate your credit score" type="text" ng-model="credentials.score" required>
+				    	<input name="score" placeholder="Estimate your credit score" type="text" ng-model="info.score" required>
 				    </fieldset>
 				</form>
 

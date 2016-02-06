@@ -22,4 +22,10 @@ Scotiafront.controller('SignupCtrl', ['$scope', '$rootScope', 'API', function($s
 	$scope.moveToStep = function(step) {
 		$scope.currentStep = step;
 	};
+
+
+	$scope.info = {};
+
+	$scope.savings = 557;
+	$scope.interest = 6;
 }]);
