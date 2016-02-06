@@ -252,13 +252,13 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 // build step for that asset and inject the changes into the page.
 // See: http://www.browsersync.io
 gulp.task('watch', function() {
-  browserSync.init({
-    files: ['templates/**/*.html', '*.html'],
-    proxy: config.devUrl,
-    snippetOptions: {
+  // browserSync.init({
+  //   files: ['templates/**/*.html', '*.html'],
+  //   proxy: config.devUrl,
+  //   snippetOptions: {
       
-    }
-  });
+  //   }
+  // });
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
