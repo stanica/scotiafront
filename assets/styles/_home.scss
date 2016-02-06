@@ -1,4 +1,6 @@
 #homepage {
+	background-color: $brand-primary;
+
 	.logos {
 		padding: 0 10px;
 	}
@@ -29,5 +31,9 @@
 			max-width: 220px;
 		    margin: 0 auto;
 		}
+	}
+	.submit {
+		margin-bottom: 30px;
+		text-align: center;
 	}
 }

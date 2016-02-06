@@ -2,13 +2,14 @@ $brand-primary: rgb(231, 35, 0);
 
 html {
 	font-size: 16px;
+    height: 100%;
 }
 
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	background-color: $brand-primary;
+	min-height: 100%;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -22,6 +23,7 @@ h1, h2, h3, h4 {
 
 #main-wrapper {
 	overflow: hidden;
+    min-height: 100%;
 }
 
 .container-fluid {
@@ -47,6 +49,7 @@ button {
 }
 
 .round-btn {
+	display: inline-block;
 	border-radius: 6px;
 	background: #efefef;
 	border: none;
@@ -57,7 +60,12 @@ button {
 	line-height: 50px;
 	font-size: 18px;
 	padding: 0 10px;
-
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+		color: #333;
+	}
 	&.facebook {
 		background: rgb(45, 69, 136);
 		color: #fff;
@@ -73,6 +81,25 @@ input[type="email"] {
 	width: 100%;
 	max-width: 400px;
 	outline: none;
+}
+
+.nav {
+	background: $brand-primary;
+
+	img {
+		margin: 10px auto;
+		max-width: 344px;
+	}
+}
+
+.graybar {
+	background: #efefef;
+	text-align: center;
+
+	h3 {
+		margin: 10px 0;
+		font-style: italic;
+	}
 }
 
 @import "_home.scss";
