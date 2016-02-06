@@ -4,20 +4,18 @@
 			<h1>Login</h1>
 
 		    <fieldset>
-		    	<label for="username">Username:</label>
-		    	<input id="username" name="username" type="text" ng-model="credentials.username" autofocus required>
+		    	<input name="email" placeholder="Email Address" type="text" ng-model="credentials.email" autofocus required>
 		    </fieldset>
 
 		    <fieldset>
-		    	<label for="password">Password:</label>
-		    	<input id="password" name="password" type="password" ng-model="credentials.password" required>
+		    	<input name="password" placeholder="Password" type="password" ng-model="credentials.password" required>
 		    </fieldset>
 
 		    <fieldset>
 		    	<div class="pull-left error-text" ng-if="loginError">
 			    	*{{ loginError }}
 			    </div>
-		    	<input class="pull-right" type="submit" value="Login">
+		    	<input class="" type="submit" value="Login">
 		    </fieldset>
 		</form>
 	</div>

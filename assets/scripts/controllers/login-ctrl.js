@@ -6,7 +6,7 @@ Scotiafront.controller('LoginCtrl', ['$scope', '$rootScope', 'API', function($sc
 
 	$scope.attemptLogin = function() {
 		if ($scope.loginForm.$valid) {
-			API.postAuthenticate($scope.credentials).then(function(data) {
+			API.postLogin($scope.credentials).then(function(data) {
 				if (data.result === true) {
 					
 				}

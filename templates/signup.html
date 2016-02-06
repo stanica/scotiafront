@@ -15,11 +15,13 @@
 
 	<div class="row">
 		<div class="col-sm-12">
-			<div ng-click="moveStep(-1)">Prev</div>
-			<div ng-click="moveStep(1)">Next</div>
+			<div class="clearfix">
+				<div class="pull-left" ng-click="moveStep(-1)">Prev</div>
+				<div class="pull-left" ng-click="moveStep(1)">Next</div>
+			</div>
 
-			<ul>
-				<li ng-repeat="steps in stepTemplates track by $index" ng-click="moveToStep($index)">
+			<ul class="steps-nav">
+				<li ng-repeat="steps in stepTemplates track by $index" ng-click="moveToStep($index)" ng-class="{ 'current-step': $index === currentStep}">
 					{{$index + 1}}
 				</li>
 			</ul>
