@@ -45,7 +45,7 @@ Scotiafront.controller('CreditInfoCtrl', ['$scope', '$rootScope', 'API', functio
 		{
 			name: 'Student Loan',
 			balance: 12450,
-			rate: 00,
+			rate: 0,
 			payment: 250
 		},
 		{
