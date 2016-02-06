@@ -7,16 +7,16 @@
 				</div>
 
 				<form name="homeForm" ng-submit="" class="bottom-bordered" novalidate>
-				    <fieldset>
-				    	<input name="amount" placeholder="How much do you need?" type="text" ng-model="info.amount" autofocus required>
-				    </fieldset>
-
-				    <fieldset>
-				    	<input name="employed" placeholder="Are you currently employed?" type="text" ng-model="info.employed" required>
+					<fieldset>
+				    	<input name="email" placeholder="Email Address" type="text" ng-model="info.email" autofocus required>
 				    </fieldset>
 
 					<fieldset>
-				    	<input name="rate" placeholder="What is your interest rate?" type="text" ng-model="info.rate" required>
+				    	<input name="password" placeholder="Password" type="password" ng-model="info.password" required>
+				    </fieldset>
+
+				    <fieldset>
+				    	<input name="amount" placeholder="How much do you need?" type="text" ng-model="info.amount" required>
 				    </fieldset>
 
 				    <fieldset>
@@ -25,7 +25,7 @@
 				</form>
 
 				<div class="submit">
-			    	<a href="/#/signup/" class="round-btn">Continue</a>
+			    	<a href="/#/creditinfo/" class="round-btn">Continue</a>
 			    </div>
 			</div>
 		</div>

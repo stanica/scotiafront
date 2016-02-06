@@ -11,9 +11,9 @@ Scotiafront.config(['$routeProvider', function($routeProvider) {
 	}).when('/login/', {
 		templateUrl: 'templates/login.html',
 		controller: 'LoginCtrl'
-	}).when('/signup/', {
-		templateUrl: 'templates/signup.html',
-		controller: 'SignupCtrl'
+	}).when('/creditinfo/', {
+		templateUrl: 'templates/creditinfo.html',
+		controller: 'CreditInfoCtrl'
 	}).otherwise({
 		redirectTo: '/'
 	});

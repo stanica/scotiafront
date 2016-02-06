@@ -62,6 +62,7 @@ button {
 	font-size: 18px;
 	padding: 0 10px;
 	text-decoration: none;
+	cursor: pointer;
 	
 	&:hover {
 		text-decoration: none;
@@ -71,9 +72,16 @@ button {
 		background: rgb(45, 69, 136);
 		color: #fff;
 	}
+	&.small {
+		height: 38px;
+		line-height: 38px;
+		font-size: 16px;
+		min-width: 180px;
+	}
 }
 
 input[type="text"],
+input[type="num"],
 input[type="password"],
 input[type="email"] {
 	background-color: white;
@@ -117,6 +125,10 @@ form.bottom-bordered {
 		margin: 10px 0;
 		font-style: italic;
 	}
+}
+
+[ng-click] {
+	cursor: pointer;
 }
 
 @import "_home.scss";
