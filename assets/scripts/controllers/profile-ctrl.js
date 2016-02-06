@@ -1,3 +1,7 @@
-Scotiafront.controller('ProfileCtrl', ['$scope', '$rootScope', 'API', function($scope, $rootScope, API) {
+Scotiafront.controller('ProfileCtrl', ['$scope', '$routeParams', 'API', function($scope, $routeParams, API) {
+	API.getUserByID($routeParams.userid).then(function(data) {
+		$scope.user = data;
+	});
+
 	
 }]);
