@@ -1,4 +1,4 @@
-var Scotiafront = angular.module('Scotiafront', ['ngRoute']);
+var Scotiafront = angular.module('Scotiafront', ['ngRoute', "ngAnimate"]);
 
 Scotiafront.config(['$compileProvider', function ($compileProvider) {
 	$compileProvider.debugInfoEnabled(false);
@@ -11,6 +11,9 @@ Scotiafront.config(['$routeProvider', function($routeProvider) {
 	}).when('/login/', {
 		templateUrl: 'templates/login.html',
 		controller: 'LoginCtrl'
+	}).when('/signup/', {
+		templateUrl: 'templates/signup.html',
+		controller: 'SignupCtrl'
 	}).otherwise({
 		redirectTo: '/'
 	});
