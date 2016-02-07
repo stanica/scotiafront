@@ -13,4 +13,14 @@ Scotiafront.controller('HomeCtrl', ['$scope', '$window', 'API', function($scope,
 	};
 
     $('[type="checkbox"]').bootstrapSwitch();
+    $('#creditSlider').slider({
+        formatter: function(value) {
+            return value;
+        }
+    });
+    $('#interestSlider').slider({
+        formatter: function(value) {
+            return value + ' %';
+        }
+    });
 }]);
