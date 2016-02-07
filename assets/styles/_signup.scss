@@ -62,7 +62,11 @@
 		margin-bottom: 30px;
 	}
 	.jug-cont {
-		min-height: 260px;
+		min-height: 180px;
+
+		.num {
+			font-size: 50px;
+		}
 	}
 	.jug {
 	    display: inline-block;
