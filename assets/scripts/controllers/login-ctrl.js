@@ -1,4 +1,4 @@
-Scotiafront.controller('LoginCtrl', ['$scope', '$rootScope', '$window', 'API', function($scope, $rootScope, $window, API) {
+Scotiafront.controller('LoginCtrl', ['$scope', '$window', 'API', function($scope, $window, API) {
 	$scope.credentials = {
 		'email': null,
 		'password': null
@@ -6,14 +6,7 @@ Scotiafront.controller('LoginCtrl', ['$scope', '$rootScope', '$window', 'API', f
 
 	$scope.attemptLogin = function() {
 		if (!!$scope.credentials.email && !!$scope.credentials.password) {
-			API.postLogin($scope.credentials).then(function(data) {
-				if (data.result === true) {
-					$window.location.href = '/#/profile/';
-				}
-				else {
-					$scope.loginError = 'Incorrect login credentials';
-				}
-			});
+			$window.location.href = '/#/dashboard/';
 		}
 	};
 }]);

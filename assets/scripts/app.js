@@ -11,9 +11,6 @@ Scotiafront.config(['$routeProvider', function($routeProvider) {
 	}).when('/login/', {
 		templateUrl: 'templates/login.html',
 		controller: 'LoginCtrl'
-	}).when('/profile/:userid?', {
-		templateUrl: 'templates/profile.html',
-		controller: 'ProfileCtrl'
 	}).when('/instantoffer/', {
 		templateUrl: 'templates/instantoffer.html',
 		controller: 'MainCtrl'
