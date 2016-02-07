@@ -52,7 +52,7 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', 'API', function($scope,
 			}
 		],
 		submit: function() {
-			$window.location.href = '/#/budget/';
+			$window.location.href = '/#/verify/';
 		}
 	};
 
@@ -68,7 +68,7 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', 'API', function($scope,
 		rate: 3.2,
 		savings: 512,
 		submit: function() {
-			$window.location.href = '/#/profile-preview/';
+			$window.location.href = '/#/profile-view/2/';
 		}
 	};
 

@@ -1,19 +1,20 @@
-<div class="container-fluid sign-up-page">
+<div class="container-fluid profile-list-page">
 	<div class="row">
-		<div class="col-sm-12">
-			<h1>Profile List</h1>
+		<div class="col-sm-12 tac">
+			<h1 class="shadow">Browse Borrowers</h1>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row screen">
 		<div class="col-sm-12">
-			<div ng-repeat="profile in profiles track by profile.id">
-				<a ng-href="/#/profile-view/{{profile.id}}">
-					<img ng-src="{{profile.image}}" alt="">
-					<p>Name: {{profile.name}}</p>
-					<p>Requested amount: ${{profile.amount}}</p>
-					<p>Requested Rate: {{profile.rate}}%</p>
-				</a>
+			<div class="col-sm-4 person-profile" ng-repeat="profile in profiles track by profile.id" ng-click="goToProfile(profile.id)">
+				<div class="img-container">
+					<img class="img-responsive" ng-src="{{profile.image}}">
+				</div>
+				
+				<h1 class="num">{{profile.percent}}%</h1>
+				<h1>{{profile.name}}</h1>
+				<h4><i class="fa fa-map-marker"></i>{{profile.location}}</h4>
 			</div>
 		</div>
 	</div>

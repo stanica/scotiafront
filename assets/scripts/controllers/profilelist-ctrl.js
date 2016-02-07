@@ -1,29 +1,33 @@
-Scotiafront.controller('ProfileListCtrl', ['$scope', '$routeParams', 'API', function($scope, $routeParams, API) {
+Scotiafront.controller('ProfileListCtrl', ['$scope', '$routeParams', '$window', 'API', function($scope, $routeParams, $window, API) {
 	// API.getAllProfiles().then(function(data) {
 	// 	$scope.profiles = data;
 	// });
 
 	$scope.profiles = [
 		{
-			name: 'Alex',
+			name: 'Tyler Smith',
 			id: 1,
-			image: '',
-			amount: 2000,
-			rate: 3.4
+			image: '/dist/images/face.png',
+			percent: 78,
+			location: 'North York, Ontario'
 		},
 		{
-			name: 'Neil',
+			name: 'Tyler Smith',
 			id: 2,
-			image: '',
-			amount: 2800,
-			rate: 3.6
+			image: '/dist/images/Ivan.png',
+			percent: 54,
+			location: 'Ivan Joseph, Ontario'
 		},
 		{
-			name: 'Rob',
+			name: 'Deborah Parker',
 			id: 3,
-			image: '',
-			amount: 1000,
-			rate: 2.2
+			image: '/dist/images/deb.png',
+			percent: 16,
+			location: 'Toronto, Ontario'
 		}
-	];	
+	];
+
+	$scope.goToProfile = function(id) {
+		$window.location.href = '/#/profile-view/' + id;
+	};
 }]);
