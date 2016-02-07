@@ -1,3 +1,7 @@
+.login-container {
+	padding-top: 180px;
+}
+
 form[name="loginForm"] {
 	&.ng-invalid.ng-submitted {
 		input.ng-pristine.ng-invalid {
