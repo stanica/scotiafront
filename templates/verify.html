@@ -15,7 +15,13 @@
 
 	<div class="row">
 		<div class="col-sm-12">
+			<div class="loading-overlay" ng-if="loading">
+				<span></span><span></span><span></span><span></span><span></span>
+			</div>
+		</div>
+		<div class="col-sm-12">
 			<button class="round-btn" ng-click="verify.submit()">View your new profile</button>
 		</div>
+
 	</div>
 </div>

@@ -1,4 +1,4 @@
-Scotiafront.controller('CreditCheckCtrl', ['$scope', '$window', 'API', function($scope, $window, API) {
+Scotiafront.controller('CreditCheckCtrl', ['$scope', '$window', '$timeout', 'API', function($scope, $window, $timeout, API) {
 	$scope.info = {};
 
 	$scope.savings = 557;
@@ -9,6 +9,8 @@ Scotiafront.controller('CreditCheckCtrl', ['$scope', '$window', 'API', function(
 		rate: 0,
 		payment: 0
 	};
+
+	$scope.loading = false;
 
 	$scope.infoRows = [
 		{
@@ -51,7 +53,10 @@ Scotiafront.controller('CreditCheckCtrl', ['$scope', '$window', 'API', function(
 	};
 
 	$scope.processInfo = function() {
-		$window.location.href = '/#/income-debt/';
+		$scope.loading = true;
+		$timeout(function() {
+			$window.location.href = '/#/income-debt/';
+		}, 2800);
 	};
 
 	$scope.$watch('infoRows', function() {

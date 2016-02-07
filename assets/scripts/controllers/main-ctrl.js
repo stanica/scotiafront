@@ -1,16 +1,20 @@
-Scotiafront.controller('MainCtrl', ['$scope', '$window', 'API', function($scope, $window, API) {
+Scotiafront.controller('MainCtrl', ['$scope', '$window', '$timeout', 'API', function($scope, $window, $timeout, API) {
+	$scope.loading = false;
+
 	// instantoffer
 	$scope.instantoffer = {
 		interest: 4.9,
 		savings: 459
 	};
 	
-
 	// megainfo
 	$scope.megainfo = {
 		form: {},
 		submit: function() {
-			$window.location.href = '/#/creditcheck/';
+			$scope.loading = true;
+			$timeout(function() {
+				$window.location.href = '/#/creditcheck/';
+			}, 3300);
 		}
 	};
 	
@@ -21,7 +25,10 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', 'API', function($scope,
 	$scope.incomedebt = {
 		form: {},
 		submit: function() {
-			$window.location.href = '/#/asset/';
+			$scope.loading = true;
+			$timeout(function() {
+				$window.location.href = '/#/asset/';
+			}, 1300);
 		}
 	};
 
@@ -29,7 +36,10 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', 'API', function($scope,
 	$scope.asset = {
 		form: {},
 		submit: function() {
-			$window.location.href = '/#/solution/';
+			$scope.loading = true;
+			$timeout(function() {
+				$window.location.href = '/#/solution/';
+			}, 900);
 		}
 	};
 
@@ -68,14 +78,20 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', 'API', function($scope,
 		rate: 3.2,
 		savings: 512,
 		submit: function() {
-			$window.location.href = '/#/profile-view/2/';
+			$scope.loading = true;
+			$timeout(function() {
+				$window.location.href = '/#/profile-view/2/';
+			}, 1400);
 		}
 	};
 
 	// conclusion
 	$scope.profilepreview = {
 		submit: function() {
-			$window.location.href = '/#/conclusion/';
+			$scope.loading = true;
+			$timeout(function() {
+				$window.location.href = '/#/conclusion/';
+			}, 1000);
 		}
 	};
 

@@ -99,11 +99,18 @@
 	.person-profile {
 		text-align: center;
 		cursor: pointer;
-		border-right: 1px solid #fff;
+		
+		@media (min-width: 768px) {
+			border-right: 1px solid #fff;
 
-		&:last-child {
-			border-right: none;
+			&:last-child {
+				border-right: none;
+			}
 		}
+		@media (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+
 		.img-container {
 			background-image: url(/dist/images/lemon_fill.png);
 			background-repeat: no-repeat;

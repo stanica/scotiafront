@@ -63,9 +63,13 @@
 					    <div class="round-btn pull-right small" ng-click="addRow()">Add Row</div>
 					</form>
 
+					<div class="loading-overlay" ng-if="loading">
+						<span></span><span></span><span></span><span></span><span></span>
+					</div>
 					<div class="tac">
 						<button class="round-btn" ng-click="processInfo()">Next Step</a>
 					</div>
+
 				</div>
 			</div>
 		</div>
