@@ -264,6 +264,7 @@ form {
 	cursor: pointer;
 }
 
+
 .loading-overlay {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -317,6 +318,10 @@ form {
         -moz-animation-delay: 0.4s;
         -webkit-animation-delay: 0.4s;
     }
+}
+
+.margin-bottom {
+    margin-bottom: 3em;
 }
 
 @import "_button.scss";

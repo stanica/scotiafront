@@ -1,19 +1,19 @@
-<div class="container-fluid sign-up-page">
+<div class="container">
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-sm-push-2 col-sm-10">
 			<h1>Solution</h1>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-sm-push-2 col-sm-10">
 			<h3>Here are some tips for you:</h3>
 			<ul>
 				<li ng-repeat="tip in solution.tips">{{tip}}</li>
 			</ul>
 		</div>
 
-		<div class="col-sm-12">
+		<div class="col-sm-push-2 col-sm-10">
 			<h3>Here are some banks interest rates:</h3>
 			<ul>
 				<li ng-repeat="bank in solution.rates">{{bank.bank}} has a rate at {{bank.rate}}%</li>
@@ -22,8 +22,8 @@
 	</div>
 
 	<div class="row">
-		<div class="col-sm-12">
-			<button class="round-btn" ng-click="solution.submit()">Next Step</button>
+		<div class="col-sm-push-2 col-sm-10">
+			<button class="round-btn pull-right margin-bottom" ng-click="solution.submit()">Next Step</button>
 		</div>
 
 		
