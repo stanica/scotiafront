@@ -11,4 +11,6 @@ Scotiafront.controller('HomeCtrl', ['$scope', '$window', 'API', function($scope,
 			$window.location.href = '/#/instantoffer/';
 		}
 	};
+
+    $('[type="checkbox"]').bootstrapSwitch();
 }]);

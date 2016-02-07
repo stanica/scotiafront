@@ -14,24 +14,24 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2>Get started in just a few simple steps!</h2>
-				
-                <form name="homeForm" class="bottom-bordered bordered" novalidate>
-					<fieldset>
-				    	<input name="credit" placeholder="Estimate your credit score" type="text" ng-model="info.credit" autofocus required>
-				    </fieldset>
 
-					<fieldset>
-				    	<input name="employed" placeholder="Are you employed?" type="text" ng-model="info.employed" required>
-				    </fieldset>
-				    
-                    <fieldset>
-                        <input name="amount" placeholder="How much do you need?" type="text" ng-model="info.amount" required>
-                    </fieldset>
+                <form name="homeForm" class="" novalidate>
+                    <label>Estimate your credit score</label>
+                    <input type="range" value="53" ng-model="info.credit" />
 
-                     <fieldset>
-				    	<input name="rate" placeholder="Estimate your average interest rate" type="text" ng-model="info.rate" required>
-				    </fieldset>
-				</form>
+                    <label>Are you employed?</label>
+                    <br>
+                    <input id="switch-onText" type="checkbox" checked data-on-text="Yes" data-off-text="No">
+                    <br>
+
+                    <label>How much do you need?</label>
+                    <br>
+                    <input name="amount" type="number" ng-model="info.amount" required>
+                    <br><br>
+
+                    <label>Estimate your average interest rate</label>
+                    <input type="range" value="53" ng-model="info.rate" />
+                </form>
 
                 <div class="submit">
                     <button class="round-btn" ng-click="attemptNewAccountCreation()">Sign up</button>

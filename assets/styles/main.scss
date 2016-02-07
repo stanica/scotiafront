@@ -225,6 +225,43 @@ input[type="email"] {
 	outline: none;
 }
 
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 160px; 
+    height: 20px; 
+    margin: 10px 50px; 
+    background: linear-gradient(to right, #16a085 0%, #16a085 100%);
+    background-size: 150px 10px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden; 
+    outline: none; 
+    zoom: 130%; 
+    display: block; 
+    margin: auto; 
+    margin-bottom: 30px; 
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    background: #27ae60;
+    position: relative; 
+    z-index: 3; 
+}
+
+input[type="range"]::-webkit-slider-thumb:after {
+    content: " "; 
+    width: 160px; 
+    height: 10px; 
+    position: absolute; 
+    z-index: 1; 
+    right: 20px; 
+    top: 5px; 
+    background: #2ecc71; 
+}
+
 form.bottom-bordered {
 	border-radius: 6px;
     overflow: hidden;
@@ -263,7 +300,6 @@ form {
 [ng-click] {
 	cursor: pointer;
 }
-
 
 @import "_button.scss";
 @import "_home.scss";
