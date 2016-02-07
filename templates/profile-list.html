@@ -1,0 +1,20 @@
+<div class="container-fluid sign-up-page">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Profile List</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div ng-repeat="profile in profiles track by profile.id">
+				<a ng-href="/#/profile-view/{{profile.id}}">
+					<img ng-src="{{profile.image}}" alt="">
+					<p>Name: {{profile.name}}</p>
+					<p>Requested amount: ${{profile.amount}}</p>
+					<p>Requested Rate: {{profile.rate}}%</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

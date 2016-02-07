@@ -1,0 +1,35 @@
+<div class="container-fluid sign-up-page">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Asset</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<form name="loginForm" class="bottom-bordered bordered" novalidate>
+				<fieldset>
+					<input placeholder="Stocks" type="text" ng-model="asset.form.stocks">
+				</fieldset>
+
+				<fieldset>
+					<input placeholder="Car" type="text" ng-model="asset.form.car">
+				</fieldset>
+
+				<fieldset>
+					<input placeholder="House" type="text" ng-model="asset.form.house">
+				</fieldset>
+
+				<fieldset>
+					<input placeholder="Savings Accounts" type="text" ng-model="asset.form.savings">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<button class="round-btn" ng-click="asset.submit()">Next Step</button>
+		</div>
+	</div>
+</div>

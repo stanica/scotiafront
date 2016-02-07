@@ -96,7 +96,8 @@ input[type="email"] {
 form.bottom-bordered {
 	border-radius: 6px;
     overflow: hidden;
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 	fieldset:not(:last-child) {
 		border-bottom: 1px solid #333;
@@ -128,6 +129,12 @@ form.bottom-bordered {
 		margin: 10px 0;
 		font-style: italic;
 	}
+}
+
+form {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 [ng-click] {
