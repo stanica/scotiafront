@@ -93,6 +93,17 @@ Scotiafront.service('API', ['$http', function ($http) {
 					alert('ERROR: ' + response.status);
 				}
 			});
-		}
+		},
+
+		getAllProfiles: function() {
+			return $http.get(baseRoute + '').then(function(response) {
+				if (response.status === 200) {
+					return response.data;
+				}
+				else {
+					alert('ERROR: ' + response.status);
+				}
+			});
+		},
 	};
 }]);

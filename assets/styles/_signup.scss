@@ -59,6 +59,7 @@
 		min-height: 260px;
 	}
 	.jug {
+	    display: inline-block;
 		border-radius: 50%;
 		border: 5px solid;
 		width: 160px;
@@ -88,6 +89,10 @@
 				font-size: 56px;
 			}
 		}
+	}
+	.totals {
+		font-weight: 700;
+		border-top: 1px solid #333;
 	}
 }
 

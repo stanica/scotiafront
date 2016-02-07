@@ -1,0 +1,79 @@
+<div class="container-fluid sign-up-page">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Mega Info</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<form name="loginForm" class="bottom-bordered bordered" novalidate>
+			    <fieldset>
+			    	<input placeholder="Title" type="text" ng-model="megainfo.form.title" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="First Name" type="text" ng-model="megainfo.form.firstname" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Last Name" type="text" ng-model="megainfo.form.lastname" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Date of Birth" type="text" ng-model="megainfo.form.dob" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Marital Status" type="text" ng-model="megainfo.form.maritalstatus" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Social Insurance Number" type="text" ng-model="megainfo.form.sin" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Home Address" type="text" ng-model="megainfo.form.adress" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="City" type="text" ng-model="megainfo.form.city" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Province" type="text" ng-model="megainfo.form.province" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Postal Code" type="text" ng-model="megainfo.form.postalcode" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Residential Status" type="text" ng-model="megainfo.form.residentialstatus" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="How long have you lived at this address" type="text" ng-model="megainfo.form.livelength" required>
+			    </fieldset>
+
+			    <fieldset>
+			    	<input placeholder="Home Phone" type="text" ng-model="megainfo.form.homephone" required>
+			    </fieldset>
+
+				<fieldset>
+					<input placeholder="Secondary Phone" type="text" ng-model="megainfo.form.secondaryphone" required>
+				</fieldset>
+	
+			    <fieldset>
+			    	<input placeholder="Email Address" type="text" ng-model="megainfo.form.email" required>
+			    </fieldset>
+			</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<button class="round-btn" ng-click="megainfo.submit()">Process Info</button>
+		</div>
+	</div>
+</div>

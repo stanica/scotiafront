@@ -1,21 +1,14 @@
-Scotiafront.controller('HomeCtrl', ['$scope', '$rootScope', 'API', function($scope, $rootScope, API) {
+Scotiafront.controller('HomeCtrl', ['$scope', '$window', 'API', function($scope, $window, API) {
 	$scope.info = {
-		'email': null,
-		'password': null,
+		'credit': null,
+		'employed': null,
 		'amount': null,
-		'score': null
+		'rate': null
 	};
 
 	$scope.attemptNewAccountCreation = function() {
-		if (!!$scope.info.email && !!$scope.info.password && !!$scope.info.amount && !!$scope.info.score) {
-			API.postNewAccountInfo($scope.info).then(function(data) {
-				if (data.result === true) {
-					$window.location.href = '/#/creditinfo/';
-				}
-				else {
-					$scope.loginError = 'Incorrect login credentials';
-				}
-			});
+		if (!!$scope.info.credit && !!$scope.info.employed && !!$scope.info.amount && !!$scope.info.rate) {
+			$window.location.href = '/#/instantoffer/';
 		}
 	};
 }]);
