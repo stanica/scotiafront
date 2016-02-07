@@ -7,7 +7,7 @@ Scotiafront.controller('ProfileCtrl', ['$scope', '$routeParams', 'API', function
 		name: 'Tyler Smith',
 		employed: false,
 		location: 'North York, Ontario',
-		currentamount: 7500,
+		currentamount: 9000,
 		totalamount: 10000,
 	};
 

@@ -8,7 +8,7 @@ Scotiafront.controller('ProfileListCtrl', ['$scope', '$routeParams', '$window', 
 			name: 'Tyler Smith',
 			id: 1,
 			image: '/dist/images/face.png',
-			percent: 78,
+			percent: 90,
 			location: 'North York, Ontario'
 		},
 		{
