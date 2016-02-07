@@ -53,6 +53,9 @@ Scotiafront.config(['$routeProvider', function($routeProvider) {
 	}).when('/dashboard/', {
 		templateUrl: 'templates/dashboard.html',
 		controller: 'DashboardCtrl'
+	}).when('/pool/', {
+		templateUrl: 'templates/pool.html',
+		controller: 'PoolCtrl'
 	}).otherwise({
 		redirectTo: '/'
 	});

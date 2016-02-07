@@ -9,6 +9,11 @@
       ],
       "main": true
     },
+    "datatable.js": {
+      "files": [
+        "scripts/datatables.min.js"
+      ]
+    },
     "main.css": {
       "files": [
         "styles/main.scss"
