@@ -1,4 +1,4 @@
-Scotiafront.controller('HomeCtrl', ['$scope', '$window', 'API', function($scope, $window, API) {
+Scotiafront.controller('HomeCtrl', ['$scope', '$window', '$timeout', 'API', function($scope, $window, $timeout, API) {
 	$scope.info = {
 		'credit': null,
 		'employed': null,
@@ -6,9 +6,14 @@ Scotiafront.controller('HomeCtrl', ['$scope', '$window', 'API', function($scope,
 		'rate': null
 	};
 
+	$scope.loading = false;
+
 	$scope.attemptNewAccountCreation = function() {
 		//if (!!$scope.info.credit && !!$scope.info.employed && !!$scope.info.amount && !!$scope.info.rate) {
-			$window.location.href = '/#/instantoffer/';
+			$scope.loading = true;
+			$timeout(function() {
+				$window.location.href = '/#/instantoffer/';
+			}, 2100);
 		//}
 	};
 

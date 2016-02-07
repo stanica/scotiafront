@@ -21,7 +21,7 @@ Scotiafront.controller('ProfileListCtrl', ['$scope', '$routeParams', '$window', 
 		{
 			name: 'Deborah Parker',
 			id: 3,
-			image: '/dist/images/deb.png',
+			image: '/dist/images/Deb.png',
 			percent: 16,
 			location: 'Toronto, Ontario'
 		}

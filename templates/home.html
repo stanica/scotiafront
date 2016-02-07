@@ -38,6 +38,10 @@
                         <input id="interestSlider" data-slider-id='credit' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14" ng-model="info.rate" />
                     </fieldset>
                 </form>
+                
+                <div class="loading-overlay-green" ng-if="loading">
+                    <span class="green"></span><span class="green"></span><span class="green"></span><span class="green"></span><span class="green"></span>
+                </div>
 
                 <div class="submit">
                     <button class="round-btn" ng-click="attemptNewAccountCreation()">Sign up</button>

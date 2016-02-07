@@ -16,59 +16,59 @@ Scotiafront.controller('ProfileCtrl', ['$scope', '$routeParams', 'API', function
 	$scope.endorserList = [
 		{
 			id: 1,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 2,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 3,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 4,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 5,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 6,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 7,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 11,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 12,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 13,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 14,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 15,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 16,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		},
 		{
 			id: 17,
-			img: '/dist/images/lori.png'
+			img: '/dist/images/Lori.png'
 		}
 	];
 }]);
