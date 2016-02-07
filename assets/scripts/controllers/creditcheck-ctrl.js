@@ -56,7 +56,7 @@ Scotiafront.controller('CreditCheckCtrl', ['$scope', '$window', '$timeout', 'API
 		$scope.loading = true;
 		$timeout(function() {
 			$window.location.href = '/#/income-debt/';
-		}, 2800);
+		}, 4800);
 	};
 
 	$scope.$watch('infoRows', function() {

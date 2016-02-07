@@ -11,16 +11,16 @@
 				<div class="col-sm-6 jug-cont tac">
 					<h3>Interest Rate</h3>
 
-					<div class="jug yellow">
-						<span class="num">{{interest}}%</span>
+                    <div>
+                        <h1 class="num">{{interest}}%</h1>
 					</div>
 				</div>
 
 				<div class="col-sm-6 jug-cont tac">
 					<h3>You could be saving</h3>
 
-					<div class="jug green">
-						<span class="num">${{savings}}</span>
+                    <div>
+                        <h1 class="num">${{savings}}</h1>
 					</div>
 				</div>
 			</div>
@@ -67,10 +67,12 @@
 						<span></span><span></span><span></span><span></span><span></span>
 					</div>
 					<div class="tac">
-						<button class="round-btn" ng-click="processInfo()">Next Step</a>
+						<button class="round-btn" ng-click="processInfo()">Next Step</button>
 					</div>
-
-				</div>
+                    <div class="text-center margin-bottom" style="margin-top: -2em;">
+                        <small>(Step 2 of 4)</small>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>

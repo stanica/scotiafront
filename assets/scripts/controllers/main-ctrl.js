@@ -6,7 +6,7 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', '$timeout', 'API', func
 		interest: 4.9,
 		savings: 459
 	};
-	
+
 	// megainfo
 	$scope.megainfo = {
 		form: {},
@@ -17,7 +17,7 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', '$timeout', 'API', func
 			}, 3300);
 		}
 	};
-	
+
 	// creditcheck
 	// In its own controller
 
@@ -46,9 +46,10 @@ Scotiafront.controller('MainCtrl', ['$scope', '$window', '$timeout', 'API', func
 	// solution
 	$scope.solution = {
 		tips: [
-			'Buy less drugs',
-			'Buy less alchohol',
-			'You have transit pass and a car, consider one or the other',
+			'Rent out your spare bedroom',
+            'Buy groceries instead of take-out',
+            'Learn new skills to get a better job',
+            'You have transit pass and a car, consider one or the other',
 			'Consider a cheaper internet plan'
 		],
 		rates: [
