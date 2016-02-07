@@ -1,13 +1,29 @@
-<div class="container-fluid sign-up-page">
-	<div class="row">
-		<div class="col-sm-12">
-			<h1>Profile View</h1>
+<div class="container-fluid profile-view-page">
+	<div class="row user-info">
+		<div class="col-sm-3 inline-centered">
+			<img src="/dist/images/face.png" alt="" class="img-responsive">
+		</div><!-- 
+
+		 --><div class="col-sm-9 inline-centered bordered">
+			<h2>{{user.name}}</h2>
+			<h2>Currently {{user.employed ? 'Employed' : 'Unemployed'}}</h2>
+			<h2>{{user.location}}</h2>
+		</div>
+	</div>
+
+	<div class="row loan-info">
+		<div class="col-sm-3 inline-centered">
+			<img src="/dist/images/lemon_fill.png" alt="" class="img-responsive">
+		</div><!-- 
+
+		 --><div class="col-sm-9 inline-centered bordered">
+			<h2><span class="bigger">{{amountpercent}}%</span> <span class="space"></span> ${{user.currentamount}} out of ${{user.totalamount}}</h2>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-sm-12">
-			
+		<div class="col-sm-12 tac">
+			<button class="round-btn">Endorse this person</button>
 		</div>
 	</div>
 </div>

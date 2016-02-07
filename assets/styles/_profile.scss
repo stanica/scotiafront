@@ -1,0 +1,39 @@
+.profile-view-page {
+	min-height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-image: url(/dist/images/profile_bg.jpg);
+	color: #fff;
+
+	.row {
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		text-shadow: 2px 1px rgba(0,0,0,0.5);
+	}
+	.user-info {
+		
+	}
+	.loan-info {
+		.space {
+			margin: 0 15px;
+		}
+		.bigger {
+			font-size: 74px;
+		}
+	}
+	
+	@media (min-width: 768px) {
+		.inline-centered {
+			display: inline-block;
+			vertical-align: middle;
+			float: none;
+
+			&.bordered {
+				border-left: 1px solid #fff;
+			}
+		}
+	}
+}
