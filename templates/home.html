@@ -16,21 +16,27 @@
                 <h2>Get started in just a few simple steps!</h2>
 
                 <form name="homeForm" class="" novalidate>
-                    <label>Estimate your credit score</label>
-                    <input type="range" value="53" ng-model="info.credit" />
+                    <fieldset>
+                        <span>Estimate your credit score</span>
+                        <input id="creditSlider" data-slider-id='credit' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14" ng-model="info.credit" />
+                    </fieldset>
 
-                    <label>Are you employed?</label>
-                    <br>
-                    <input id="switch-onText" type="checkbox" checked data-on-text="Yes" data-off-text="No">
-                    <br>
+                    <fieldset>
+                        <span>Are you employed?</span>
+                        <input id="switch-onText" type="checkbox" checked data-on-text="Yes" data-off-text="No" data-handle-width="80" ng-model="info.emplyed">
+                    </fieldset>
 
-                    <label>How much do you need?</label>
-                    <br>
-                    <input name="amount" type="number" ng-model="info.amount" required>
-                    <br><br>
+                    <fieldset>
+                        <span>How much do you need?</span>
+                        <div>
+                            <input name="amount" type="number" ng-model="info.amount" required>
+                        </div>
+                    </fieldset>
 
-                    <label>Estimate your average interest rate</label>
-                    <input type="range" value="53" ng-model="info.rate" />
+                    <fieldset>
+                        <span>Estimate your average interest rate</span>
+                        <input id="interestSlider" data-slider-id='credit' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="14" ng-model="info.rate" />
+                    </fieldset>
                 </form>
 
                 <div class="submit">

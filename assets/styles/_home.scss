@@ -64,3 +64,32 @@ header .header-content .header-content-inner p {
         margin-right: auto;
     }
 }
+
+form[name="homeForm"] {
+    margin: 3em;
+
+    fieldset {
+        margin: 1em;
+
+        input[type="number"] {
+            float: right;
+            width: 210px;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 0;
+            height: 2em;
+        }
+
+        span {
+             float: left;
+        }
+
+        .slider {
+            float: right;
+        }
+
+        .bootstrap-switch {
+            float: right;
+        }
+    }
+}

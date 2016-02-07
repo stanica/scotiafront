@@ -49,6 +49,12 @@
 }
 
 .sign-up-page {
+    padding-top: 4em;
+
+    .round-btn {
+        margin-bottom: 2em;
+    }
+
 	form[name="signupForm"] {
 		margin-bottom: 30px;
 	}
