@@ -1,8 +1,21 @@
-<div id="homepage">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-				<form name="homeForm" class="bottom-bordered bordered" novalidate>
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Peer 2 Peer lending</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. </p>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+        </div>
+    </div>
+</header>
+
+<section class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2>Get started in just a few simple steps!</h2>
+				
+                <form name="homeForm" class="bottom-bordered bordered" novalidate>
 					<fieldset>
 				    	<input name="credit" placeholder="Estimate your credit score" type="text" ng-model="info.credit" autofocus required>
 				    </fieldset>
@@ -10,32 +23,20 @@
 					<fieldset>
 				    	<input name="employed" placeholder="Are you employed?" type="text" ng-model="info.employed" required>
 				    </fieldset>
+				    
+                    <fieldset>
+                        <input name="amount" placeholder="How much do you need?" type="text" ng-model="info.amount" required>
+                    </fieldset>
 
-				    <fieldset>
-				    	<input name="amount" placeholder="How much do you need?" type="text" ng-model="info.amount" required>
-				    </fieldset>
-
-				    <fieldset>
+                     <fieldset>
 				    	<input name="rate" placeholder="Estimate your average interest rate" type="text" ng-model="info.rate" required>
 				    </fieldset>
 				</form>
 
-				<div class="submit">
-			    	<button class="round-btn" ng-click="attemptNewAccountCreation()">Continue</button>
-			    </div>
-			</div>
-		</div>
-
-		<div class="row login-options">
-			<div class="col-sm-12">
-				<div class="spacer">or</div>
-				<a href="/#/login/" class="round-btn">Sign in</a>
-			</div>
-
-			<div class="col-sm-12 slogan">
-				<p>When life gives you high interest loans, use</p>
-				<img src="/dist/images/lemonaid.png" alt="Lemonaid Logo" class="img-responsive">
-			</div>
-		</div>
-	</div>
-</div>
+                <div class="submit">
+                    <button class="round-btn" ng-click="attemptNewAccountCreation()">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
